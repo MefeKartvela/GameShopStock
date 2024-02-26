@@ -13,19 +13,22 @@ namespace C_Project
             InitializeComponent();
         }
 
-        private void btnManageStaff_Click(object sender, EventArgs e)
+       
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            StaffManagementForm staffForm = new StaffManagementForm();
-            staffForm.ShowDialog();
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+            
         }
 
-        private void btnManageStock_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            StockManagementForm stockForm = new StockManagementForm();
-            stockForm.ShowDialog();
+            StockManagementForm form3 = new StockManagementForm();
+            form3.Show();
+            this.Hide();
         }
-
-
     }
 }
 

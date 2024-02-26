@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_Project;
+using System;
 using System.Collections.Generic;
 
 using System.Windows.Forms;
@@ -22,13 +23,14 @@ namespace GameShopStock
             }
 
             private void btnAddItem_Click(object sender, EventArgs e)
-        {
-                string sname = textBox1.Text;
+            {
+                string name = textBox1.Text;
                 int price = Convert.ToInt32(textBox2.Text);
                 int quantity = Convert.ToInt32(textBox3.Text);
 
                 itemList.Add(new Item( name, price, quantity));
                 UpdateItemList();
+                
             }
 
             private void btnRemoveItem_Click(object sender, EventArgs e)
@@ -64,6 +66,13 @@ namespace GameShopStock
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MainForm frm = new MainForm();
+            frm.ShowDialog();
+            this.Hide();
         }
     }
 }
