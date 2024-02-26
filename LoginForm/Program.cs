@@ -1,11 +1,10 @@
-﻿using C_Project;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GameShopStock
+namespace LoginForm
 {
     internal static class Program
     {
@@ -17,7 +16,7 @@ namespace GameShopStock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm.Form1());
+            Application.Run(new Form1());
         }
     }
 }

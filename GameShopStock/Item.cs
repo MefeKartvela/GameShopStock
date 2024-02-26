@@ -15,9 +15,9 @@ namespace GameShopStock
             Quantity = quantity;
         }
 
-        public string Name { get; }
-        public int Price { get; }
-        public int Quantity { get; }
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public int Quantity { get; set; }
 
         
 
